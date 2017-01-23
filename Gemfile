@@ -17,10 +17,12 @@ group :development, :test do
   gem 'byebug'
   gem 'cucumber-rails', :require => false
   gem 'factory_girl_rails'
+  gem 'launchy'
   gem 'rspec-rails'
-  gem 'web-console', '~> 2.0'
   gem 'spring'
 end
+
+gem 'web-console', group: :development
 
 group :test do
   gem 'database_cleaner'
