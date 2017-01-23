@@ -5,4 +5,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :messages
+
+  def full_name
+    "#{first_name} #{last_name}".strip
+  end
+
 end
