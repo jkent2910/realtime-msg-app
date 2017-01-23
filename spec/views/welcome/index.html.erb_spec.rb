@@ -1,5 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe "welcome/index.html.erb", type: :view do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "says 'Sign up'" do
+    render
+    assert_select "h2", text: 'Sign up'
+  end
 end
