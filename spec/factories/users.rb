@@ -11,5 +11,7 @@ FactoryGirl.define do
 
   factory :julie, :parent => :user do |s|
     s.email 'julie@gmail.com'
+    s.first_name "Julie"
+    s.last_name "Kent"
   end
 end
