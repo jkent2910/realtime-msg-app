@@ -7,7 +7,7 @@ Feature: User signs in
     Given I am Julie
     And I am not signed in
     When I sign in
-    Then I should be on the landing page
+    Then I should be on the messages page
     And I should see "Signed in successfully."
 
   Scenario: user signs in with wrong email
