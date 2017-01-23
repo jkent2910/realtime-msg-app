@@ -1,6 +1,49 @@
 .message-input {
 
+  background-color: rgba(0, 0, 0, 0.03);
+  box-sizing: border-box;
+  height: 13%;
+  padding: 0 5px 5px;
+
   input {
     display: none;
   }
+
+  form {
+    height: 100%;
+  }
+
+  textarea {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.messages {
+  background-color: #fff;
+  box-shadow: 0 0 0 5px #f4f2ed inset;
+  box-sizing: border-box;
+  height: 87%;
+  overflow: scroll;
+  padding: 20px;
+}
+
+.messages-table {
+  display: table;
+  width: 100%;
+}
+
+.message {
+  line-height: 1.6;
+  display: table-row;
+}
+
+.message-user {
+  font-weight: 500;
+}
+
+.message-same-user {
+  font-weight: 500;
+  font-style: italic;
+  color: darkblue;
 }

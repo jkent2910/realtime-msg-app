@@ -1,7 +1,15 @@
 <div class="message">
-  <div class="message-user">
-    <%= message.user.full_name %>:
-  </div>
+
+    <% if message.user == current_user %>
+    <div class="message-same-user">
+      <%= message.user.full_name %>:
+    </div>
+    <% else %>
+    <div class="message-user">
+      <%= message.user.full_name %>:
+    </div>
+    <% end %>
+
   <div class="message-content">
     <%= message.content %>
   </div>
