@@ -1,3 +1,34 @@
+<div class="homepage-hero-module">
+  <div class="video-container">
+    <div class="filter"></div>
+    <div class="nav-header">
+      <div class="row">
+        <div class="col-md-offset-10 col-md-2">
+          <% unless user_signed_in? %>
+              <%= link_to "Sign In", new_user_session_path, class: "btn btn-default" %>
+              <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="welcome-header">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="header-text">Action Cable Demo App</h1>
+        </div>
+      </div>
+    </div>
+    <video autoplay loop class="fillWidth">
+      <source src="/assets/Type.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+      <source src="/assets/Type.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+    </video>
+    <div class="poster hidden">
+      <%= image_tag('Type.jpg') %>
+    </div>
+  </div>
+</div>
+
+
 <div class="container">
   <div class="border-form-div">
     <div class="form-signin">
