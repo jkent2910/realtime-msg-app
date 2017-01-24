@@ -11,6 +11,9 @@
     <% end %>
 
   <div class="message-content">
-    <%= message.content %>
+      <%= message.content %>
+    <% if message.user == current_user %>
+      <div class="btn btn-danger delete-msg-btn" onclick="deleteMessage(this)" data="<%= message.to_param %>">x</div>
+    <% end %>
   </div>
 </div>
