@@ -1,3 +1,8 @@
+.img-circle {
+  height: 50px;
+  width: 50px;
+}
+
 .message-input {
 
   background-color: rgba(0, 0, 0, 0.03);
@@ -23,7 +28,7 @@
   background-color: #fff;
   box-shadow: 0 0 0 5px #f4f2ed inset;
   box-sizing: border-box;
-  height: 87%;
+  height: 400px;
   overflow: scroll;
   padding: 20px;
 }
@@ -40,12 +45,16 @@
 
 .message-user {
   font-weight: 500;
+  display: inline-block;
+  padding-left: 10px;
 }
 
 .message-same-user {
   font-weight: 500;
   font-style: italic;
   color: darkblue;
+  display: inline-block;
+  padding-left: 10px;
 }
 
 .delete-msg-btn {
@@ -54,4 +63,12 @@
   padding-left: 3px;
   padding-top: 2px;
   line-height: 0.85;
+}
+
+.messages-container {
+  margin-top: 50px;
+}
+
+.very-small-txt {
+  font-size: 10px;
 }

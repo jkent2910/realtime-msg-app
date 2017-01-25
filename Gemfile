@@ -7,6 +7,7 @@ gem "font-awesome-rails"
 gem 'jbuilder', '~> 2.0'
 gem 'kramdown'
 gem 'jquery-rails'
+gem "paperclip", '4.3.1'
 gem 'pg'
 gem 'puma'
 gem 'rails', '5.0'
