@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'devise'
+gem 'faker'
 gem "font-awesome-rails"
 gem 'jbuilder', '~> 2.0'
 gem 'kramdown'
